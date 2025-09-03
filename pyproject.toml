@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clubs"
+version = "2.0.0"
+description = "clubs is a general purpose python poker engine for running arbitrary poker configurations with a built-in fast hand evaluator."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "GPL-3.0"}
+authors = [
+    {name = "Ferdinand Schlatt"}
+]
+keywords = ["reinforcement learning", "poker", "AI", "gymnasium"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Games/Entertainment",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "numpy",
+]
+
+[project.optional-dependencies]
+render = [
+    "flask",
+    "flask-socketio",
+    "gevent",
+]
+
+[project.urls]
+Homepage = "https://github.com/fschlatt/clubs"
+"Bug Reports" = "https://github.com/fschlatt/clubs/issues"
+Source = "https://github.com/fschlatt/clubs/"
+
+[tool.setuptools.packages.find]
+exclude = ["test*"]
