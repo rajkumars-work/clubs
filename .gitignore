@@ -1,0 +1,63 @@
+# ephemeral python files
+__pycache__
+.venv
+*.swp
+
+# package install files
+build/
+dist/
+*.egg-info
+
+# atomate2 job directories
+**/job_*
+
+# large data files
+**/*.json*
+**/*.xyz*
+**/*.extxyz*
+**/*.csv*
+*.data
+**/*.zip
+**/*.pkl*
+**/*.xml*
+**/*.pt*
+
+# figure files
+*.png
+*.pdf
+*.svg
+*.jpg
+*.jpeg
+
+# binary file format for storing MD trajectories
+**/*.dcd*
+
+# experimental data file formats
+*.tif*
+*.ras*
+*.npy
+
+# slurm logs
+*.log
+*.out
+*.err
+
+# tmp token files (this should be handled better in the future)
+.env
+.gdrivetoken
+
+# allowlist certain files
+!comp/scripts/dft/**/*.csv
+!comp/scripts/data/miracle_densities/miracle_densities.csv
+!eng/**/*.json*
+!**/*.devcontainer/**
+!**/*.devcontainer.json
+
+# ignore jetbrains IDE files
+.idea/
+
+# ignore tmp files
+tmp/
+
+# os x nonsense
+.DS_Store
