@@ -314,3 +314,22 @@ SHORT_DECK_NINE_PLAYER: PokerConfig = {
     "low_end_straight": True,
     "order": ["sf", "fk", "fl", "fh", "st", "tk", "tp", "pa", "hc"],
 }
+
+NO_LIMIT_SIMPLE_SIX_PLAYER: PokerConfig = {
+    "num_players": 6,
+    "num_streets": 4,
+    "blinds": [1, 0, 0, 0, 0, 0],
+    "antes": 0,
+    "raise_sizes": "inf",
+    "num_raises": "inf",
+    "num_suits": 4,
+    "num_ranks": 13,
+    "num_hole_cards": 2,
+    "num_community_cards": [0, 3, 1, 1],
+    "num_cards_for_hand": 5,
+    "mandatory_num_hole_cards": 0,
+    "start_stack": 100,
+    "low_end_straight": True,
+    "order": None,
+}
+
